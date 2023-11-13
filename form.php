@@ -1,15 +1,27 @@
 <?php
-$servername="localhost";
-$username="root";
-$password="";
-$con= new mysqli($servername,$username,$password);
+$con = new mysqli("localhost", "root", "", "");
 if(!$con)
 {
-    echo "Not Connected";
+    echo "Database Not Connected";
 }
-else
-{
-    echo "Connected";
-}
-$con->close();
+$name
+$gender
+$size
+$code
 ?>
+
+<?php
+$con = new mysqli("localhost", "root", "", "inc");
+if(!$con)
+{
+    echo "fail to connect";
+}
+$sql = "delete from student_info where id=15";
+if($con->query($sql)==true)
+{
+    echo "data has been deleted successfully";
+}
+else 
+{
+    echo "fail to delete";
+}
