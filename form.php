@@ -4,10 +4,13 @@ if(!$con)
 {
     echo "Database Not Connected";
 }
-$name
-$gender
-$size
-$code
+$name=$_POST['name'];
+$gender=$_POST['gender'];
+$size=$_POST['size'];
+$code=$_POST['code'];
+$email=$_POST['email'];
+$address=$_POST['address'];
+$sql ="insert into ";
 ?>
 
 <?php
